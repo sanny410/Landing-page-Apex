@@ -1,0 +1,124 @@
+@import "../fonts/InterSemiBold/style.css";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;700&display=swap");
+@import "reset.css";
+.page .page__main .main__description .description__title {
+  font-size: 48px;
+  color: #1B1C20;
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 56px;
+}
+
+.page .page__main .main__description .description__subtitle {
+  font-size: 18px;
+  color: #383A47;
+  font-family: "DM Sans", sans-serif;
+  line-height: 26px;
+}
+
+.page .page__main .main__description .description__button, .header__authorization .authorization__registration {
+  background: #FB8E0B;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+  padding: 13px;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1306px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.header {
+  min-height: 90px;
+  padding: 20px 0;
+}
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container .menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__container .menu__list .menu__item {
+  padding-right: 35px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C20;
+  cursor: pointer;
+}
+.header__logo {
+  max-width: 95px;
+  max-height: 36px;
+}
+.header__authorization .authorization__login {
+  margin-right: 34px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1B1C20;
+  cursor: pointer;
+}
+.page {
+  flex: 1 1 auto;
+}
+.page .page__main {
+  width: 100%;
+  max-height: 747px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .page__main .column {
+  width: 50%;
+}
+.page .page__main .main__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-right: 80px;
+}
+.page .page__main .main__description .description__title {
+  font-size: 50px;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+.page .page__main .main__description .description__subtitle {
+  margin-bottom: 30px;
+}
+.page .page__main .main__description .description__button {
+  margin-bottom: 100px;
+}
+.page .page__main .main__description .main__rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page .page__main .main__description .main__rating .rate__clients {
+  margin-right: 20px;
+}
+.page .page__main .main__photo {
+  height: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

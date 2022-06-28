@@ -1,0 +1,130 @@
+@import "fonts";
+@import "reset.css";
+@import "inheritance-scss";
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+._container {
+  max-width: 1306px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+.header {
+  min-height: 90px;
+  padding: 20px 0;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .menu__item {
+        padding-right: 35px;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1B1C20;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__logo {
+    max-width: 95px;
+    max-height: 36px;
+  }
+
+  &__authorization {
+    .authorization__login {
+      margin-right: 34px;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1B1C20;
+      cursor: pointer;
+    }
+
+    .authorization__registration {
+      @extend %orange_button
+    }
+  }
+
+}
+
+.page {
+  flex: 1 1 auto;
+
+  .page__main {
+    width: 100%;
+    max-height: 747px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .column {
+      width: 50%;
+    }
+
+    .main__description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-right: 80px;
+
+      .description__title {
+        @extend %title;
+        font-size: 50px;
+        margin-top: 120px;
+        margin-bottom: 30px;
+      }
+
+      .description__subtitle {
+        @extend %subtitle;
+        margin-bottom: 30px;
+      }
+
+      .description__button {
+        @extend %orange_button;
+        margin-bottom: 100px;
+      }
+
+      .main__rating {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .rate__clients {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .main__photo {
+      height: 100%;
+    }
+  }
+}
+
+.footer {
+
+}
+
+
+
+
