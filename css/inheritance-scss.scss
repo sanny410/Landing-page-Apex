@@ -1,5 +1,14 @@
+$maxWidth: 1306;
+
+@mixin adaptive-font($pcSize, $mobSize) {
+  $addSize: $pcSize - $mobSize;
+  $maxWidth: $maxWidth - 320;
+  font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
 %title {
-  font-size: 48px;
+  @include adaptive-font(48, 32);
   color: #1B1C20;
   font-family: 'Josefin Sans', sans-serif;
   line-height: 56px;
