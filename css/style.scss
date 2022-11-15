@@ -1,6 +1,7 @@
 @import "fonts";
 @import "reset.css";
 @import "inheritance-scss";
+@import "hamburger-menu";
 
 
 .wrapper {
@@ -13,10 +14,10 @@
 ._container {
   max-width: 1306px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 20px;
 
   @media (max-width: 768px) {
-    margin: 0 20px;
+    padding: 0 20px;
   }
 }
 
@@ -36,7 +37,6 @@
   @media (max-width: 768px) {
     display: none;
   }
-
 }
 
 .menu__item {
@@ -58,7 +58,9 @@
 .header {
   width: 100%;
   min-height: 90px;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
 
   &__authorization {
 
@@ -249,14 +251,13 @@
           "A A A C C C"
           "A A A C C C";
       column-gap: 128px;
-      padding: 105px 0;
+      padding-top: 100px;
 
       @media (max-width: 768px) {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
-        padding: 40px 0;
       }
 
       .video-chat__icon {
@@ -287,13 +288,14 @@
   }
 
   &__live-chat {
-    padding: 110px 0;
+    padding-top: 110px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     @media (max-width: 768px) {
-      padding: 40px 0 20px;
+      padding-top: 40px;
+      padding-bottom: 20px;
       display: flex;
       flex-direction: column-reverse
     }
@@ -332,7 +334,7 @@
       box-sizing: content-box;
 
       @media (max-width: 768px) {
-        padding-left: 0px;
+        padding-left: 0;
       }
     }
   }
@@ -345,10 +347,11 @@
       justify-content: space-between;
       align-items: center;
       column-gap: 220px;
-      padding: 110px 0;
+      padding-top: 110px;
 
       @media (max-width: 768px) {
-        padding: 40px 0 20px;
+        padding-top: 40px;
+        padding-bottom: 20px;
         flex-direction: column;
       }
 

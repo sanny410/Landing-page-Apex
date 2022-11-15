@@ -11,7 +11,7 @@
   <body>
     <div class="wrapper">
       <header class="header _container">
-        <div class="header__container menu">
+        <nav class="header__container menu">
           <img class="header__logo logo" src="assets/logo.png" alt="logo">
           <nav class="header__menu">
             <ul class="menu__list">
@@ -36,10 +36,28 @@
             <a class="authorization__login">Login</a>
             <button class="authorization__registration">Get Started Free</button>
           </div>
+          <div>
+            <nav class="navbar">
+              <div class="container">
+                <div class="navbar__wrap">
+                  <div class="hamb">
+                    <img src="./assets/icon/hamburger.png" alt="hamburger-menu">
+                  </div>
+                    <ul class="hamb-menu">
+                      <li><a href="#">Demos</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Pages</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </div>
+              </div>
+          </nav>
         </div>
+        </nav>
       </header>
       <main class="page">
-        <section class="page__main _container">
+        <section class="page__main _container" id="" >
           <div class="main__description column">
             <h1 class="description__title">Start chatting with customers, anytime, anywhere with Apex</h1>
             <p class="description__subtitle">Great software that allows you to chat from any place at any time without any interruption.</p>
@@ -174,5 +192,6 @@
         </div>
       </footer>
     </div>
+  <script src="index.js"></script>
   </body>
 </html>

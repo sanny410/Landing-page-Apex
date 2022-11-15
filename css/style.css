@@ -27,6 +27,61 @@
   padding: 13px;
 }
 
+.hamb {
+  display: none;
+}
+@media (max-width: 768px) {
+  .hamb {
+    top: 0;
+    right: 0;
+    display: block;
+    z-index: 5;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+}
+
+.hamb-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 100px 30px 30px 30px !important;
+  transition: right 0.3s ease 0s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+}
+.hamb-menu._active {
+  right: 0;
+}
+@media (max-width: 768px) {
+  .hamb-menu::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 80px;
+    z-index: 2;
+  }
+}
+.hamb-menu li {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.hamb-menu li a {
+  text-decoration: none;
+  color: black;
+  font-family: "DM Sans", sans-serif;
+}
+
 .wrapper {
   min-height: 100vh;
   overflow: hidden;
@@ -37,11 +92,11 @@
 ._container {
   max-width: 1306px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0 20px;
 }
 @media (max-width: 768px) {
   ._container {
-    margin: 0 20px;
+    padding: 0 20px;
   }
 }
 
@@ -81,7 +136,8 @@
 .header {
   width: 100%;
   min-height: 90px;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header__authorization .authorization__login {
   margin-right: 34px;
@@ -247,7 +303,7 @@
   display: grid;
   grid-template-areas: "A A A B B B" "A A A C C C" "A A A C C C";
   column-gap: 128px;
-  padding: 105px 0;
+  padding-top: 100px;
 }
 @media (max-width: 768px) {
   .page__video .page__video-chat {
@@ -255,7 +311,6 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 40px 0;
   }
 }
 .page__video .page__video-chat .video-chat__icon {
@@ -277,14 +332,15 @@
   font-weight: 500;
 }
 .page__live-chat {
-  padding: 110px 0;
+  padding-top: 110px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 @media (max-width: 768px) {
   .page__live-chat {
-    padding: 40px 0 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     display: flex;
     flex-direction: column-reverse;
   }
@@ -316,7 +372,7 @@
 }
 @media (max-width: 768px) {
   .page__live-chat .live-chat__chat-photo {
-    padding-left: 0px;
+    padding-left: 0;
   }
 }
 .page__inbox {
@@ -327,11 +383,12 @@
   justify-content: space-between;
   align-items: center;
   column-gap: 220px;
-  padding: 110px 0;
+  padding-top: 110px;
 }
 @media (max-width: 768px) {
   .page__inbox .inbox__container {
-    padding: 40px 0 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
     flex-direction: column;
   }
 }
